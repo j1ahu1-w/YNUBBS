@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edt_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/login_pw"
+        android:hint="教工号/学号"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="25sp"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/edt_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_id"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:hint="密码"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/login_pw"
+        android:textSize="25sp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="245dp"
+        android:background="@drawable/login_circle"
+        android:text="登陆"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_to_register"
+        android:layout_below="@id/btn_login"
+        android:layout_marginTop="30dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/login_circle"
+        android:text="立即注册"
+        android:textSize="18sp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="150dp"
+        android:gravity="center_horizontal"
+        android:text="服务器返回信息：" />
+
+
+</RelativeLayout>

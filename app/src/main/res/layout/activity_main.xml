@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main">
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/sv_lly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/lly_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_type"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="社区"
+            android:background="#44A3BB"/>
+        <Button
+            android:id="@+id/btn_shida"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/btn_type"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="每日头条"
+            android:background="#22DDDD"/>
+        <Button
+            android:id="@+id/btn_userinfo"
+            android:layout_toRightOf="@id/btn_shida"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="个人信息"
+            android:background="#44A3BB"/>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

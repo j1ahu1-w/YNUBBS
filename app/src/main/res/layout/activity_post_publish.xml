@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Post_Publish">
+
+    <EditText
+        android:id="@+id/edt_note_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:hint="请在这里编辑标题"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/edt_note_content"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/edt_note_title" />
+
+    <Button
+        android:id="@+id/btn_pl_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_note_content"
+        android:layout_centerHorizontal="true"
+        android:text="发布" />
+
+    <Button
+        android:id="@+id/btn_re"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_pl_note"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:text="返回" />
+
+</RelativeLayout>

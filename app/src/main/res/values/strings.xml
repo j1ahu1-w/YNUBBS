@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">YNUBBS</string>
+    <string name="prompt_name">Input Name</string>
+    <string name="prompt_password">PassWord </string>
+    <string name="action_sign_in">Login</string>
+    <string name="action_to_register">GoToRegister</string>
+    <string name="action_to_login">BackToLogin</string>
+    <string name="action_register">Register</string>
+    <string name="action_sign_in_short">Login</string>
+    <string name="title_activity_main">MainActivity</string>
+</resources>

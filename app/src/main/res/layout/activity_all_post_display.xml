@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllPost_Display">
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_note_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Note_title"
+            android:gravity="center"
+            android:textColor="#44A3BB"
+            android:background="#DAEDF1"
+            />
+        <TextView
+            android:id="@+id/tv_note_content"
+            android:layout_width="match_parent"
+            android:layout_below="@id/tv_note_title"
+            android:layout_height="200dp"
+            android:textSize="18sp"
+            />
+        <LinearLayout
+            android:id="@+id/option"
+            android:layout_below="@id/tv_note_content"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/reply"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="回复"
+                android:textSize="15sp"
+                android:background="#DAEDF1"/>
+
+            <Button
+                android:id="@+id/post_delete"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:background="#DAEDF1"
+                android:text="删除"
+                android:textSize="15sp" />
+            <Button
+                android:id="@+id/post_re"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:background="#DAEDF1"
+                android:text="返回"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lly_reply"
+            android:layout_below="@id/option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
